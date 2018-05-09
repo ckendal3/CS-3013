@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">In-Class Fun Time</string>
+    <string name="action_help">Help</string>
+    <string name="description">This is the app description. The left button will show and hide the textView. The right button will change the background color for the textView.</string>
+</resources>

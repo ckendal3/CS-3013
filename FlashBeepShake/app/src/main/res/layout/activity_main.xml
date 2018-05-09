@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Switch
+        android:id="@+id/lightSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lightStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:checked="false"
+        android:text="Light Switch"
+        android:textAlignment="center"
+        android:textOff="Off"
+        android:textOn="On"
+        android:textSize="24sp"
+        tools:checked="false" />
+
+    <TextView
+        android:id="@+id/lightStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Off"
+        android:textSize="24sp" />
+
+    <Switch
+        android:id="@+id/soundSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lightSwitch"
+        android:layout_centerVertical="true"
+        android:checked="false"
+        android:text="Sound Switch"
+        android:textAlignment="center"
+        android:textOff="No Sound"
+        android:textOn="Sound"
+        android:textSize="24sp"
+        tools:checked="false" />
+
+    <TextView
+        android:id="@+id/soundStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/soundSwitch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp"
+        android:text="No Sound"
+        android:textSize="24sp" />
+
+    <Switch
+        android:id="@+id/vibrateSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="68dp"
+        android:checked="false"
+        android:text="Vibrate Switch"
+        android:textAlignment="center"
+        android:textOff="Not Vibrating"
+        android:textOn="Vibrating"
+        android:textSize="24sp"
+        tools:checked="false" />
+
+    <TextView
+        android:id="@+id/vibrateStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/vibrateSwitch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:text="Not Vibrating"
+        android:textSize="24sp" />
+
+
+
+</RelativeLayout>

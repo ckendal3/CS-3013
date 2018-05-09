@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wdibstudios.platerate.PlateReviews">
+
+    <ImageView
+        android:id="@+id/leaveReviewTemp"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="468dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/platetemplate" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/leaveReviewUTurn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="448dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:tint="@android:color/transparent"
+        app:backgroundTint="@android:color/transparent"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/leaveReviewTemp"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315"
+        app:srcCompat="@mipmap/uturngraphic" />
+
+    <TextView
+        android:id="@+id/leaveReviewPlate"
+        android:layout_width="143dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/SoftGrey"
+        android:textSize="34sp"
+        android:hint="Plate #"
+        app:layout_constraintBottom_toBottomOf="@+id/leaveReviewTemp"
+        app:layout_constraintEnd_toEndOf="@+id/leaveReviewTemp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/leaveReviewTemp"
+        app:layout_constraintTop_toTopOf="@+id/leaveReviewTemp"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/leaveReviewState"
+        android:layout_width="115dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="State"
+        android:textAlignment="center"
+        android:textColor="@color/LineYellow"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaveReviewPlate"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <EditText
+        android:id="@+id/leaveReviewComment"
+        android:layout_width="213dp"
+        android:layout_height="221dp"
+        android:ems="10"
+        android:hint="Comment"
+        android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+        android:textAlignment="viewStart"
+        android:textColor="@color/LineYellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.635" />
+
+    <RatingBar
+        android:id="@+id/leaveReviewRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/DetailGrey"
+        android:theme="@style/RatingBar"
+        app:layout_constraintBottom_toTopOf="@+id/leaveReviewComment"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaveReviewState" />
+
+    <Button
+        android:id="@+id/SavePlateButton"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="156dp"
+        android:background="@color/LineYellow"
+        android:text="Save Review!"
+        android:textAllCaps="false"
+        android:textColor="@color/LineWhite"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaveReviewTemp"
+        app:layout_constraintVertical_bias="0.912" />
+
+
+
+</android.support.constraint.ConstraintLayout>

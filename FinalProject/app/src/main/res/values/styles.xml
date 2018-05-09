@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@drawable/defaultbackground</item>
+        <item name="colorPrimary">@color/AsphaltGrey</item>
+        <item name="colorPrimaryDark">@color/AsphaltGrey</item>
+        <item name="colorAccent">@color/SoftGrey</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splashscreen</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/AsphaltGrey</item>
+        <item name="colorControlActivated">@color/LineYellow</item>
+    </style>
+
+</resources>

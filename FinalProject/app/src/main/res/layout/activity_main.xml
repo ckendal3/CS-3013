@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wdibstudios.platerate.MainActivity"
+    android:id="@+id/constraintLayout">
+
+    <ImageView
+        android:id="@+id/leaveReviewTemp"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="156dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberPlateTemp"
+        app:srcCompat="@mipmap/platetemplate" />
+
+    <ImageView
+        android:id="@+id/numberPlateTemp"
+        android:layout_width="220dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/platetemplate" />
+
+    <EditText
+        android:id="@+id/PlateStateInput"
+        android:layout_width="159dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="State"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/LineWhite"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/leaveReviewTemp"
+        app:layout_constraintEnd_toEndOf="@+id/leaveReviewTemp"
+        app:layout_constraintStart_toStartOf="@+id/leaveReviewTemp"
+        app:layout_constraintTop_toTopOf="@+id/leaveReviewTemp" />
+
+    <EditText
+        android:id="@+id/PlateNumberInput"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Plate #"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/LineWhite"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/numberPlateTemp"
+        app:layout_constraintEnd_toEndOf="@+id/numberPlateTemp"
+        app:layout_constraintStart_toStartOf="@+id/numberPlateTemp"
+        app:layout_constraintTop_toTopOf="@+id/numberPlateTemp" />
+
+    <Button
+        android:id="@+id/LookUpPlateButton"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="156dp"
+        android:background="@color/LineYellow"
+        android:text="Look Up Plate!"
+        android:textAllCaps="false"
+        android:textColor="@color/LineWhite"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaveReviewTemp"
+        app:layout_constraintVertical_bias="0.604" />
+
+    <Spinner
+        android:id="@+id/stateSelector"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="State Selection"
+        android:text="State"
+        android:dropDownSelector="@color/AsphaltGrey"
+        android:popupBackground="@color/LineYellow"
+        app:layout_constraintBottom_toTopOf="@+id/leaveReviewTemp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberPlateTemp"
+        app:layout_constraintVertical_bias="0.931" />
+
+</android.support.constraint.ConstraintLayout>
